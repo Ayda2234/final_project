@@ -2,15 +2,17 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f2f2f2;
+    background-image: url('15_1sas12das.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 h1 {
     display: flex;
     flex-direction: column;
-    color: #333;
-    margin-left: 200px; /* i stopped here*/
+    color: #ffffff;
+    margin-left: 5px; /* i stopped here*/
 }
-
 form {
     margin-top: 100px;
     max-width: 400px;
@@ -52,8 +54,9 @@ li {
     border: 1px solid #ccc;
     padding: 10px;
     margin: 10px 0;
-    border-radius: 5px;
+    border-radius: 15px;
     background-color: #fff;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 
 li strong {
@@ -71,24 +74,33 @@ li span {
 }
 
 .chat-sidebar {
-    width: 20%;
-    background-color: #549170;
-    color: #ffffff;
+    width: 250px;
+    background-color: #333;
+    color: white;
     padding: 20px;
+    box-shadow: 0px 0px 10px rgba(45, 154, 43, 0.3);
 }
- 
+
+.chat-sidebar h1 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
 
 .chat-sidebar li {
-padding-top: 25px;
-list-style:unset;
-
+    list-style: none;
+    margin-bottom: 10px;
 }
 
-.chat-sidebar li a {
-color:rgb(0, 47, 32);
-font-style:initial;
-font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-font-size: 23px;
-    
-    }
+.chat-sidebar a {
+    text-decoration: none;
+    color: rgb(6, 20, 1);
+    font-weight: bold;
+    transition: color 0.3s ease;
+    font-size: 20px;
+}
+
+.chat-sidebar a:hover {
+    color:#4cf82d;
+}
+
 

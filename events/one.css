@@ -2,20 +2,12 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f2f2f2;
+    background-image: url('15_1sas12das.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
-/*#num {  
-    width: 500px;  
-    height: 500px;  
-    border-radius: 100px;
-    padding: 0%;
-    margin: 50px;
-    object-position: left;
-    box-shadow: rgba(1, 65, 24, 0.4) 5px 5px, rgba(2, 110, 31, 0.3) 10px 10px, rgba(28, 236, 9, 0.2) 15px 15px, rgba(103, 249, 105, 0.1) 20px 20px, rgba(149, 251, 173, 0.05) 25px 25px;
-    /*border: 5px solid red;  */
-    /*background-color: lightgreen;  */
-    /*object-fit: none; */
-    /*object-position: 200px 100px;  */
+
 
     .img-container {
         display: flex;
@@ -30,6 +22,29 @@ body {
         margin: 50px;
         object-position: left;
         box-shadow: rgba(1, 65, 24, 0.4) 5px 5px, rgba(2, 110, 31, 0.3) 10px 10px, rgba(28, 236, 9, 0.2) 15px 15px, rgba(103, 249, 105, 0.1) 20px 20px, rgba(149, 251, 173, 0.05) 25px 25px;
+    }
+    
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+    
+    li {
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin: 10px 0;
+        border-radius: 15px;
+        background-color: #fff;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    }
+    
+    li strong {
+        font-weight: bold;
+    }
+    
+    li span {
+        font-size: 1.5em;
+        margin-left: 5px;
     }
     
     /* Remove the margin-left from the .description class */
@@ -51,26 +66,35 @@ body {
     }
     
     .chat-sidebar {
-        width: 20%;
-        background-color: #549170;
-        color: #ffffff;
+        width: 250px;
+        background-color: #333;
+        color: white;
         padding: 20px;
+        box-shadow: 0px 0px 10px rgba(53, 72, 52, 0.3);
     }
-     
+    
+    .chat-sidebar h1 {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
     
     .chat-sidebar li {
-    padding-top: 25px;
-    list-style:unset;
-    
+        list-style: none;
+        margin-bottom: 10px;
     }
     
-    .chat-sidebar li a {
-    color:rgb(0, 47, 32);
-    font-style:initial;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 23px;
-        
-        }
+    .chat-sidebar a {
+        text-decoration: none;
+        color: rgb(6, 20, 1);
+        font-weight: bold;
+        transition: color 0.3s ease;
+        font-size: 20px;
+    }
+    
+    .chat-sidebar a:hover {
+        color:#4cf82d;
+    }
+    
     
     .chat-content {
         flex: 1;
